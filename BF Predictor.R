@@ -35,19 +35,16 @@ summary(model_4)
 
 
 
-
+#Final model
 model_5 <- lm(BFdata$BODYFAT~BFdata$DENSITY+BFdata$WEIGHT+BFdata$BICEPS+BFdata$AGE)
 #cor(BFdata$BODYFAT,BFdata$DENSITY+BFdata$WEIGHT)
 summary(model_5)
 
-#R^2 = 0.9778
+#Final model R^2 = 0.9778
 
 plot(BFdata$BODYFAT, BFdata$DENSITY+BFdata$WEIGHT+BFdata$BICEPS+BFdata$AGE)
 
 plot(model_5)
 
-
-
-#R^2 for model with all variables = 0.9777
 
 
